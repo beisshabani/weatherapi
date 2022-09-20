@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(https://wallpaperbat.com/img/223445-new-york-city-wallpaper-city-wallpaper-new-york.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto auto;
+    color: rgb(231, 211, 230);
+    transition: background ease-in-out 0.25s;
+}
+.weather-container {
+    display: block;
+    width: 420px;
+    height: 500px;
+    border: 1px solid rgb(200, 200, 200);
+    margin: 16vh auto auto auto;
+    box-shadow: inset 0px 0px 8px rgb(200, 200, 200);
+    background: rgba(0, 0, 0, 0.7   );
+    overflow: hidden;
+    z-index: 3220;
+}
+
+
+.button {
+    width: 120px;   
+    box-shadow: -0.5px -0.5px 2px rgb(240, 240, 240), 0.5px 0.5px 2px rgb(200, 200, 200);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 50px;
+    line-height: 40px;
+    transition: box-shadow linear 0.25s;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding-top: 4px;
+    outline: 0;
+    border: 0;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+}
+.button:hover{
+    box-shadow: 1px 1px 2px rgb(240, 240, 240), -1px -1px 2px rgb(200, 200, 200);
+}
+h2.title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 20px;
+    margin-top: 12px;
+
+}
+svg + span {
+    margin-left: -14px;
+}
+.weather-search{
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    z-index: 999;
+
+ }
+ .search-bar {
+     flex-basis: 0;
+ }
+ #search {
+     width: 45vh;
+     height: 50px;
+     outline: none;
+     margin-left: -30px;
+     background:rgba(0, 0, 0, 0.1);
+     box-shadow: -0.5px -0.5px 2px rgb(240, 240, 240), 0.5px 0.5px 2px rgb(200, 200, 200);
+     border: 0;
+     color: white;
+     padding-left: 40px;
+     transition: box-shadow linear 0.25s;
+ }
+#search:hover{
+    box-shadow: -0.5px -0.5px 1px rgb(240, 240, 240), 0.5px 0.5px 1px rgb(200, 200, 200); 
+}
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    align-self: center;
+    align-content: center;
+    align-items: center;
+}
+.weather-info > div {
+    display: inline-flex;   
+}
+.celsius {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 55px;
+    margin-top: -50px;
+}
+.celsius-icon {
+    color: white;
+    display: inline-flex;
+    font-size: 14px;
+}
+.stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+    line-height: 30px;
+    margin-top: 5vh;
+    font-family: Arial;
+}
+.stats > div:nth-child(odd) {
+    width: 50%;
+    padding-left: 13px;
+}
+.stats > div:nth-child(even) {
+    width: 50%;
+    text-align: right;
+    padding-right: 13px;
+}
+.prompt {
+    display: fixed;
+    width: 100%;
+    height: 100vh;
+    background:rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.prompt > div {
+
+}
